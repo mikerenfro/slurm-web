@@ -50,7 +50,7 @@ RUN apt-get update -q && \
     apt-get -y install $BUILD_DEPS $RUN_DEPS && \
     ln -s /usr/lib/x86_64-linux-gnu/ /usr/lib64
 
-RUN a2enmod wsgi && \
+RUN a2enmod uwsgi && \
     a2enconf javascript-common
 
 # Build and install specific deps
