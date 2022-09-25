@@ -95,7 +95,7 @@ RUN cd /usr/src && \
 RUN cd /usr/src && \
     git clone https://github.com/edf-hpc/slurm-web.git && \
     cd slurm-web && \
-    git checkout debian/2.0.0 && \
+    git checkout debian/2.2.6 && \
     debuild -us -uc && \
     dpkg -i ../slurm-web-*deb
 
