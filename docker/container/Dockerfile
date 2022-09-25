@@ -20,7 +20,7 @@
 # See https://github.com/phusion/baseimage-docker/blob/master/Changelog.md for
 # a list of version numbers.
 
-FROM phusion/baseimage:0.9.19
+FROM phusion/baseimage:jammy-1.0.1
 MAINTAINER Kilian Cavalotti <kilian@stanford.edu>
 
 # Set correct environment variables.
@@ -54,7 +54,7 @@ RUN a2enmod wsgi && \
     a2enconf javascript-common
 
 # Build and install specific deps
-ENV SLURM_VER=15.08.2
+ENV SLURM_VER=21.08
 RUN cd /usr/src && \
     git clone https://github.com/PySlurm/pyslurm.git && \
     cd pyslurm && \
