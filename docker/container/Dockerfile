@@ -38,7 +38,7 @@ RUN locale-gen en_US.UTF-8
 
 ENV BUILD_DEPS="git devscripts equivs apt-utils apache2-dev libslurm-dev python-setuptools cython3 python3-dev libslurmdb-dev libslurm-dev ca-certificates"
 
-ENV RUN_DEPS="apache2 libapache2-mod-wsgi javascript-common python-flask clustershell libjs-bootstrap libjs-jquery-flot libjs-jquery-tablesorter munge slurm-wlm node-uglify fonts-dejavu-core python-ldap python-redis libjs-requirejs libjs-requirejs-text libjs-three libjs-d3 libjs-handlebars"
+ENV RUN_DEPS="apache2 libapache2-mod-uwsgi javascript-common python3-flask clustershell libjs-bootstrap libjs-jquery-flot libjs-jquery-tablesorter munge slurm-wlm node-uglify fonts-dejavu-core python3-ldap python3-redis libjs-requirejs libjs-requirejs-text libjs-three libjs-d3 libjs-handlebars"
 
 # Enable universe and multiverse
 #RUN cat /etc/apt/sources.list && \
